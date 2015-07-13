@@ -3,7 +3,7 @@ var uglify = require("gulp-uglify");
 var sass = require("gulp-sass");
 var minifyHTML = require("gulp-minify-html");
 var inlinesource = require('gulp-inline-source');
-
+var uncache = require('gulp-uncache');
 
 gulp.task("js", function(){
 	gulp.src("dev/*.js")
@@ -26,6 +26,7 @@ gulp.task("html", function(){
 			compress: false,
 			pretty: true,
 		}))
+		.pipe(uncache())
 		.pipe(minifyHTML({
 			empty: true,
 			conditionals: true
