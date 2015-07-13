@@ -1,7 +1,7 @@
 var gulp = require("gulp");
 var uglify = require("gulp-uglify");
 var sass = require("gulp-sass");
-var minifyHTML = require("gulp-minifyHTML");
+var minifyHTML = require("gulp-minify-html");
 var inlinesource = require('gulp-inline-source');
 
 
