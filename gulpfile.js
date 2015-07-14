@@ -36,7 +36,7 @@ gulp.task("html", function(){
 });
 
 gulp.task("webserver", function(){
-	gulp.src("work/")
+	gulp.src("./")
 		.pipe(webserver({
 			livereload: true,
 			directoryListing: true,
