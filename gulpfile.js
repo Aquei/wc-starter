@@ -4,6 +4,7 @@ var sass = require("gulp-sass");
 var minifyHTML = require("gulp-minify-html");
 var inlinesource = require('gulp-inline-source');
 var uncache = require('gulp-uncache');
+var webserver = require('gulp-webserver');
 
 gulp.task("js", function(){
 	gulp.src("dev/*.js")
