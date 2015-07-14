@@ -56,7 +56,7 @@ gulp.task("dist", function(){
 
 gulp.task("watch",  function(){
 	gulp.watch(["dev/*.html"], ["html"]);
-	gulp.watch(["dev/*.sass"], ["css"]);
+	gulp.watch(["dev/*.scss"], ["css"]);
 	gulp.watch(["dev/*.js"], ["js"]);
 });
 
